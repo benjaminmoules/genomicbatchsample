@@ -2,7 +2,7 @@
 This project was delivered to BCPlatform partner in Finland. This partner wanted to prototype how to run their BCP Server on CentOS server to compute 100's of thousands of genomics calculations in HPC scenarios.
 
 > Goal of the partner was to leverage their Server in an Azure Batch Linux (CentOS 7) Cluster.
-> What you will find in this sample code (produced for the partner) is the 2 following sample codes
+> What you will find in this repo is the 2 following sample codes produced for the partner
 
 ## Sample code #1 
   - batch_client.py : Whole workflow to drive creation of a Batch Pool, along with its nodes, copy local files to remote blob storage, to add task to the pool, execute them on the newly stored files, and to get the results back locally.
