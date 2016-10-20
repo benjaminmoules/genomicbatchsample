@@ -1,14 +1,15 @@
 # BCPlatforms with Python for Azure Batch on CentOS
-This project was delivered to BCPlatform partner in Finland. This partner wanted to prototype how to run their BCP Server on CentOS server to compute 100's of thousands of genomics calculations in HPC scenarios.
+##### Last update 20/10/2016 - Partner using library below in their production code 
 
-> Goal of the partner was to leverage their Server in an Azure Batch Linux (CentOS 7) Cluster.
-> What you will find in this repo is the 2 following sample codes produced for the partner
+This prototype & libraries were delivered to BCPlatform partner in Finland. This partner wanted to understand how they could run their BCP Server on CentOS server to compute of millions of genomics calculations within HPC scenarios on Azure.
 
-## Sample code #1 
+> Goal of the partner was to leverage their BCPlatforms Server in an Azure Batch Linux (CentOS 7) Cluster.
+
+## Complete Workflow with Azure Batch 
   - batch_client.py : Whole workflow to drive creation of a Batch Pool, along with its nodes, copy local files to remote blob storage, to add task to the pool, execute them on the newly stored files, and to get the results back locally.
   - batch_task.py : task to be executed on the nodes from the pool (pulling data from a directory
 
-## Sample code #2 
+## Pool update / Nodes Connection 
   - configuration.cfg : You need to define your Batch/Storage account configuration credentials
   - bcpscript.sh : script to run as a startup script on each new Node instance of the batch cluster
   - changePoolSettings.py : How to modify your Azure Batch pool (batch name for a cluster of nodes) with new configuration
