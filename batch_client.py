@@ -43,20 +43,22 @@ import azure.batch.models as batchmodels
 # Update the Batch and Storage account credential strings below with the values
 # unique to your accounts. These are used when constructing connection strings
 # for the Batch and Storage client objects.
-_BATCH_ACCOUNT_NAME = 'bmbatch'
-_BATCH_ACCOUNT_KEY = 'vQ3jBrQWjAcrJ+IO1lY1E8TyWUsyAHBEBEaPJubETF77BHilIiMEA0+5lNCivPwua3VfBaE9wKwWKrFbnJA6JA=='
-_BATCH_ACCOUNT_URL = 'https://bmbatch.westeurope.batch.azure.com'
+_BATCH_ACCOUNT_NAME = 'SPECIFY_BATCH_ACCOUNT_NAME_FROM_AZURE_PORTAL'
+_BATCH_ACCOUNT_KEY = 'SPECIFY_BATCH_ACCOUNT_KEY_FROM_AZURE_PORTAL'
+_BATCH_ACCOUNT_URL = 'SPECIFY_BATCH_ACCOUNT_URL_FROM_AZURE_PORTAL'
 
-_STORAGE_ACCOUNT_NAME = 'bmstgbatch'
-_STORAGE_ACCOUNT_KEY = 'rpp5ghkbf0C1aHmRvKiOgcsthNYviNzcZGXejw2PXF83NzasBk1V3AJ7yRy59LSC6SK5lpayTjF1XDyDlIriKA=='
+_STORAGE_ACCOUNT_NAME = 'SPECIFY_STORAGE_ACCOUNT_NAME_FROM_AZURE_PORTAL'
+_STORAGE_ACCOUNT_KEY = 'SPECIFY_STORAGE_ACCOUNT_KEY_FROM_AZURE_PORTAL'
 
-_POOL_ID = 'BCPPool3'
-_POOL_NODE_COUNT = 2
+
+# Parameters below needs to be adapted to your Compute workflow
+_POOL_ID = 'POOLID'
+_POOL_NODE_COUNT = 2 #Number of Nodes in your pool
 _POOL_VM_SIZE = 'STANDARD_A1'
 _NODE_OS_DISTRO = 'Ubuntu'
 _NODE_OS_VERSION = '14'
 
-_JOB_ID = 'Job3'
+_JOB_ID = 'JOBID'
 
 def query_yes_no(question, default="yes"):
     """

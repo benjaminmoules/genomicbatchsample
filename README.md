@@ -8,9 +8,9 @@ This prototype & libraries were delivered to BCPlatform partner in Finland. This
 ## Complete Workflow with Azure Batch 
   - batch_client.py : Whole workflow to drive creation of a Batch Pool, along with its nodes, copy local files to remote blob storage, to add task to the pool, execute them on the newly stored files, and to get the results back locally.
   - batch_task.py : task to be executed on the nodes from the pool (pulling data from a directory
-
+  
 ## Pool update / Nodes Connection 
-  - configuration.cfg : You need to define your Batch/Storage account configuration credentials
+  - configuration.cfg : You need to define your Batch/Storage account configuration credentials (includes batch/storage service name & key but also batch service URL), those come from the Azure Portal
   - bcpscript.sh : script to run as a startup script on each new Node instance of the batch cluster
   - changePoolSettings.py : How to modify your Azure Batch pool (batch name for a cluster of nodes) with new configuration
   - changePoolSettings.cfg : Pool settings configuration

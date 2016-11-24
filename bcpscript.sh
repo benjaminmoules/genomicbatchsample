@@ -44,6 +44,7 @@ then
 ln -s  /usr/lib/x86_64-linux-gnu/libbcfs.so.0.1.0 /usr/lib/x86_64-linux-gnu/libbcfs.so
 fi
 
-su -l bcos_calc -c "/home/bcos_calc/jobdir/run_plink.sh"
+#task declaration to be done later in the Task creation
+#su -l bcos_calc -c "/home/bcos_calc/jobdir/run_plink.sh"
 
 exit 1
